@@ -1,39 +1,107 @@
-# 4.2" 300×400 tri-color reflective SPI module (ST7306) — documentation & samples
+<p align="left"><img alt="OSPTEK" src="./images/logo.png" width="200" /></p>
 
-**简体中文：** [`README.md`](README.md)
+<h1 align="center">OSPTEK 4.2″ LCD 300×400 (ST7306 · SPI)</h1>
+
+<p align="center"><b>3-color reflective LCD · SPI · ST7306</b></p>
+
+<p align="center"><a href="./README.md">简体中文</a> | English</p>
+
+<p align="center">
+  <img alt="Size: 4.2 inch" src="https://img.shields.io/badge/Size-4.2%22-3498DB?style=flat-square" />
+  <img alt="Resolution: 300x400" src="https://img.shields.io/badge/Resolution-300%C3%97400-8E44AD?style=flat-square" />
+  <img alt="Interface: SPI" src="https://img.shields.io/badge/Interface-SPI-27AE60?style=flat-square" />
+  <img alt="Driver: ST7306" src="https://img.shields.io/badge/Driver-ST7306-E7352C?style=flat-square" />
+</p>
+
+<p align="center"><img alt="OSPTEK 4.2″ 300×400 3-color reflective LCD SPI module (ST7306) product image" src="./images/product.png" width="640" /></p>
+
+## Contents
+
+- [Overview](#overview)
+- [Specifications](#specifications)
+- [Sample projects](#sample-projects)
+- [Repository layout](#repository-layout)
+- [Resources](#resources)
+- [Buy](#buy)
+- [Support](#support)
 
 ---
 
-> This repository currently provides an **ESP-IDF sample project**. Datasheets and specifications will be added to `docs/` when available.
+## Overview
 
-## Product overview
+OSPTEK **4.2″ 300×400 3-color reflective LCD** is a **SPI** black/white/red display module driven by **ST7306**. Suited to low-power instruments, labels, and outdoor-readable UIs.
 
-| Item | Description |
-|:--|:--|
-| Module | 4.2-inch **tri-color reflective LCD**, **300×400** resolution |
-| Interface | **SPI** |
-| Driver IC | **ST7306** |
-| Spec ID | **`4.2-lcd-300x400-spi-st7306`** is the common product designation in documentation |
+Spec ID (repository name): `4.2-lcd-300x400-spi-st7306`
 
----
+Current module version: **YDP420H003-V3**. Electrical and mechanical details follow [`docs/YDP_420_H003_V3_d136efd0a8.pdf`](./docs/YDP_420_H003_V3_d136efd0a8.pdf).
+
+## Specifications
+
+| Item | Spec |
+| ---- | ---- |
+| Size | 4.2 inch |
+| Type | Reflective LCD (black / white / red) |
+| Resolution | 300×400 |
+| Interface | SPI |
+| Driver IC | ST7306 |
+
+> Full outline, FPC definition, power, and timing follow the product datasheet / driver IC datasheet.
+
+## Sample projects
+
+| Description | Path |
+| ---- | ---- |
+| ESP32-S3 · ST7306 SPI multi-color display (Color4) | [`examples/ESP32S3-4p2Q300400-ST7306/`](./examples/ESP32S3-4p2Q300400-ST7306/) |
 
 ## Repository layout
 
-### Top-level
+```text
+4.2-lcd-300x400-spi-st7306/
+├── README.md
+├── README_EN.md
+├── MODULE_VERSION.md
+├── LICENSE
+├── images/          # README assets
+├── docs/            # datasheets, etc.
+└── examples/        # sample projects
+```
 
-| Path | Contents |
-|:--|:--|
-| `docs/` | Datasheets and specifications (**to be added**) |
-| `examples/` | **Sample projects** |
+## Resources
 
-### `examples/` layout
+### Product files
 
-| Location | Description |
-|:--|:--|
-| `examples/` root | ESP32-S3 + IDF5; ST7306 SPI multi-color demo with rotary encoder page switching |
+| Resource | Link |
+| ---- | ---- |
+| Product datasheet (YDP420H003-V3) | [`docs/YDP_420_H003_V3_d136efd0a8.pdf`](./docs/YDP_420_H003_V3_d136efd0a8.pdf) |
+| Driver IC datasheet (ST7306) | [`docs/ST_7306_V0_1_c30c3541a3.pdf`](./docs/ST_7306_V0_1_c30c3541a3.pdf) |
 
-### Sample project paths
+### Samples
 
-| Description | Path |
-|:--|:--|
-| ST7306 SPI multi-color display (Color4 driver) | `examples/esp32s3-idf5_st7306-spi_color4/` |
+- [ESP32-S3 ST7306 SPI Color4](./examples/ESP32S3-4p2Q300400-ST7306/)
+
+## Buy
+
+<p align="center">
+  <a href="https://www.aliexpress.com/store/1105701619"><img alt="AliExpress store" src="https://img.shields.io/badge/AliExpress-Official_Store-FF6A00?style=for-the-badge" /></a>
+  &nbsp;&nbsp;
+  <a href="https://shop110742373.taobao.com/"><img alt="Taobao store" src="https://img.shields.io/badge/Taobao-Official_Store-FF6A00?style=for-the-badge" /></a>
+</p>
+
+**Overseas (AliExpress)**
+
+- Store: [OSPTEK Official Store](https://www.aliexpress.com/store/1105701619)
+
+**China (Taobao)**
+
+- Store: [鱼鹰光电工厂店](https://shop110742373.taobao.com/)
+
+## Support
+
+- Technical support / product inquiry: <luyu@osptek.com>
+- QQ group: **985881096**
+- Website: <https://osptek.com/>
+- Feel free to open an Issue in this repository with any questions
+
+---
+
+<p align="center"><sub>© 2026 OSPTEK · Materials in this repository are licensed under CC BY 4.0</sub></p>
