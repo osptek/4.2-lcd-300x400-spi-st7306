@@ -46,8 +46,6 @@ Repo id: `4.2-lcd-300x400-spi-st7306`
 
 <p align="center"><img alt="YDP420H003-V3" src="./images/YDP420H003-V3.png" width="320" /></p>
 
-**Notes:** Module.
-
 ---
 
 ## How to Switch Branches

@@ -46,8 +46,6 @@
 
 <p align="center"><img alt="YDP420H003-V3" src="./images/YDP420H003-V3.png" width="320" /></p>
 
-**说明：** 模组。
-
 ---
 
 ## 如何切换分支
