@@ -2,9 +2,9 @@
 
 <h1 align="center">OSPTEK 4.2″ LCD 300×400 (ST7306 · SPI)</h1>
 
-<p align="center"><b>3-color reflective LCD · SPI · ST7306</b></p>
+<p align="center"><b>LCD module · SPI · ST7306 · Multi-Version Index</b></p>
 
-<p align="center"><a href="./README.md">简体中文</a> | English</p>
+<p align="center">English | <a href="./README.md">简体中文</a></p>
 
 <p align="center">
   <img alt="Size: 4.2 inch" src="https://img.shields.io/badge/Size-4.2%22-3498DB?style=flat-square" />
@@ -13,81 +13,61 @@
   <img alt="Driver: ST7306" src="https://img.shields.io/badge/Driver-ST7306-E7352C?style=flat-square" />
 </p>
 
-<p align="center"><img alt="OSPTEK 4.2″ 300×400 3-color reflective LCD SPI module (ST7306) product image" src="./images/product.png" width="640" /></p>
-
 ## Contents
 
-- [Overview](#overview)
-- [Specifications](#specifications)
-- [Sample projects](#sample-projects)
-- [Repository layout](#repository-layout)
-- [Resources](#resources)
-- [Buy](#buy)
+- [About](#about)
+- [Versions](#versions)
+- [YDP420H003-V3](#ydp420h003-v3)
+- [How to Switch Branches](#how-to-switch-branches)
+- [Where to Buy](#where-to-buy)
 - [Support](#support)
 
 ---
 
-## Overview
+## About
 
-OSPTEK **4.2″ 300×400 3-color reflective LCD** is a **SPI** black/white/red display module driven by **ST7306**. Suited to low-power instruments, labels, and outdoor-readable UIs.
+This repository holds materials for the **4.2″ 300×400 LCD (SPI · ST7306)** module family.
 
-Spec ID (repository name): `4.2-lcd-300x400-spi-st7306`
+**`main` is the navigation page** (repository default). Use the table below for a quick scan; click **Details** to jump to the section on this page. For a given version’s full content, switch to that **version branch** (see below).
 
-Current module version: **YDP420H003-V3**. Electrical and mechanical details follow [`docs/YDP_420_H003_V3_d136efd0a8.pdf`](./docs/YDP_420_H003_V3_d136efd0a8.pdf).
+Repo id: `4.2-lcd-300x400-spi-st7306`
 
-## Specifications
+---
 
-| Item | Spec |
-| ---- | ---- |
-| Size | 4.2 inch |
-| Type | Reflective LCD (black / white / red) |
-| Resolution | 300×400 |
-| Interface | SPI |
-| Driver IC | ST7306 |
+## Versions
 
-> Full outline, FPC definition, power, and timing follow the product datasheet / driver IC datasheet.
+| Version | Image | Notes |
+| ------- | ----- | ----- |
+| YDP420H003-V3 | <img alt="YDP420H003-V3" src="./images/YDP420H003-V3.png" width="120" /> | [Details](#ydp420h003-v3) |
 
-## Sample projects
+---
 
-| Description | Path |
-| ---- | ---- |
-| ESP32-S3 · ST7306 SPI multi-color display (Color4) | [`examples/ESP32S3-4p2Q300400-ST7306/`](./examples/ESP32S3-4p2Q300400-ST7306/) |
+## YDP420H003-V3
 
-## Repository layout
+<p align="center"><img alt="YDP420H003-V3" src="./images/YDP420H003-V3.png" width="320" /></p>
 
-```text
-4.2-lcd-300x400-spi-st7306/
-├── README.md
-├── README_EN.md
-├── MODULE_VERSION.md
-├── LICENSE
-├── images/          # README assets
-├── docs/            # datasheets, etc.
-└── examples/        # sample projects
-```
+**Notes:** Module.
 
-## Resources
+---
 
-### Product files
+## How to Switch Branches
 
-| Resource | Link |
-| ---- | ---- |
-| Product datasheet (YDP420H003-V3) | [`docs/YDP_420_H003_V3_d136efd0a8.pdf`](./docs/YDP_420_H003_V3_d136efd0a8.pdf) |
-| Driver IC datasheet (ST7306) | [`docs/ST_7306_V0_1_c30c3541a3.pdf`](./docs/ST_7306_V0_1_c30c3541a3.pdf) |
+Full product materials are on each **version branch**; `main` is navigation only.
 
-### Samples
+- **Web:** open the branch dropdown at the top left of the repository page and select the branch that matches your part number.
+- **CLI:** after cloning, run `git checkout <version-branch>`; if the repo is already local, `git fetch` first, then switch.
 
-- [ESP32-S3 ST7306 SPI Color4](./examples/ESP32S3-4p2Q300400-ST7306/)
+---
 
-## Buy
+## Where to Buy
 
 <p align="center">
-  <a href="https://www.aliexpress.com/store/1105701619"><img alt="AliExpress store" src="https://img.shields.io/badge/AliExpress-Official_Store-FF6A00?style=for-the-badge" /></a>
+  <a href="https://www.aliexpress.com/store/1105701619"><img alt="AliExpress Official Store" src="https://img.shields.io/badge/AliExpress-Official_Store-E62E04?style=for-the-badge&logo=aliexpress&logoColor=white" /></a>
   &nbsp;&nbsp;
-  <a href="https://shop110742373.taobao.com/"><img alt="Taobao store" src="https://img.shields.io/badge/Taobao-Official_Store-FF6A00?style=for-the-badge" /></a>
+  <a href="https://shop110742373.taobao.com/"><img alt="Taobao Official Store" src="https://img.shields.io/badge/Taobao-Official_Store-FF6A00?style=for-the-badge" /></a>
 </p>
 
-**Overseas (AliExpress)**
+**International (AliExpress)**
 
 - Store: [OSPTEK Official Store](https://www.aliexpress.com/store/1105701619)
 
@@ -95,13 +75,15 @@ Current module version: **YDP420H003-V3**. Electrical and mechanical details fol
 
 - Store: [鱼鹰光电工厂店](https://shop110742373.taobao.com/)
 
+---
+
 ## Support
 
-- Technical support / product inquiry: <luyu@osptek.com>
-- QQ group: **985881096**
+- Technical Support / Sales: <luyu@osptek.com>
+- QQ Technical Group: **985881096**
 - Website: <https://osptek.com/>
-- Feel free to open an Issue in this repository with any questions
+- Feel free to open an Issue in this repository if you have any questions
 
 ---
 
-<p align="center"><sub>© 2026 OSPTEK · Materials in this repository are licensed under CC BY 4.0</sub></p>
+<p align="center"><sub>© 2026 OSPTEK · Licensed under CC BY 4.0</sub></p>
