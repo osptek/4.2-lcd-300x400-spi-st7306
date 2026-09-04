@@ -2,9 +2,9 @@
 
 <h1 align="center">OSPTEK 4.2″ LCD 300×400（ST7306 · SPI）</h1>
 
-<p align="center"><b>LCD 模组 · SPI · ST7306 · 多版本索引</b></p>
+<p align="center"><b>三色全反射 LCD · SPI · ST7306</b></p>
 
-<p align="center"><a href="./README_EN.md">English</a> | 简体中文</p>
+<p align="center"><a href="./README_EN.md">English</a> | 简体中文 · <a href="../../README.md">规格族索引</a></p>
 
 <p align="center">
   <img alt="Size: 4.2 inch" src="https://img.shields.io/badge/Size-4.2%22-3498DB?style=flat-square" />
@@ -15,59 +15,56 @@
 
 ## 目录
 
-- [说明](#说明)
-- [版本一览](#版本一览)
-- [YDP420H003-V3](#ydp420h003-v3)
-- [YDP420H005-V3](#ydp420h005-v3)
-- [YDP420HT005-V3](#ydp420ht005-v3)
+- [产品简介](#产品简介)
+- [规格参数](#规格参数)
+- [仓库结构](#仓库结构)
+- [相关资料](#相关资料)
 - [购买链接](#购买链接)
 - [技术支持](#技术支持)
 
 ---
 
-## 说明
+## 产品简介
 
-本仓库收录 **4.2 寸 300×400 LCD（SPI · ST7306）** 显示模组资料。
-
-**根目录 README 为导航页**。下表可快速浏览各版本；点击「完整资料」进入 `versions/` 下对应**料号文件夹**（产品页、规格书、示例均在该目录内）。
+OSPTEK **4.2 寸 300×400 三色全反射 LCD** 是一款 **SPI** 接口黑白红显示模组，显示驱动为 **ST7306**，触摸驱动为 **FT3269**。适合低功耗仪表、标签与户外可读场景。
 
 规格标识（仓库名）：`4.2-lcd-300x400-spi-st7306`
 
----
+当前模组版本：**YDP420HT005-V3**。外形与 FPC 定义以 [`docs/YDP420HT005-V3_外形图.pdf`](./docs/YDP420HT005-V3_%E5%A4%96%E5%BD%A2%E5%9B%BE.pdf) 为准。
 
-## 版本一览
+## 规格参数
 
-| 版本 | 宣传图 | 简介 | 完整资料 |
-| ---- | ------ | ---- | -------- |
-| YDP420H003-V3 | <img alt="YDP420H003-V3" src="./versions/YDP420H003-V3/images/product.png" width="120" /> | [简介](#ydp420h003-v3) | [完整资料](./versions/YDP420H003-V3/) |
-| YDP420H005-V3 | | [简介](#ydp420h005-v3) | [完整资料](./versions/YDP420H005-V3/) |
-| YDP420HT005-V3 | | [简介](#ydp420ht005-v3) | [完整资料](./versions/YDP420HT005-V3/) |
+| 项目 | 规格 |
+| ---- | ---- |
+| 尺寸 | 4.2 英寸 |
+| 类型 | 全反射 LCD（黑白红） |
+| 分辨率 | 300×400 |
+| 接口 | SPI |
+| 驱动 IC | ST7306 |
+| 触摸驱动 | FT3269 |
 
----
+> 完整外形尺寸、FPC 定义、供电与时序以产品规格书 / 驱动手册为准。本料号目前仅入库外形图。
 
-## YDP420H003-V3
+## 仓库结构
 
-<p align="center"><img alt="YDP420H003-V3" src="./versions/YDP420H003-V3/images/product.png" width="320" /></p>
+```text
+4.2-lcd-300x400-spi-st7306/             # 仓库根（导航见 ../../README.md）
+└── versions/
+    └── YDP420HT005-V3/                  # 本料号完整资料
+        ├── README.md
+        ├── README_EN.md
+        ├── images/
+        └── docs/
+```
 
-完整产品页、规格书与示例：[versions/YDP420H003-V3/](./versions/YDP420H003-V3/)
+## 相关资料
 
----
+### 本产品资料
 
-## YDP420H005-V3
-
-**说明：** 目前仅入库外形图与 CAD。
-
-完整产品页、规格书与示例：[versions/YDP420H005-V3/](./versions/YDP420H005-V3/)
-
----
-
-## YDP420HT005-V3
-
-**说明：** FPC 为 21 Pin，带触摸（FT3269）。目前仅入库外形图。
-
-完整产品页、规格书与示例：[versions/YDP420HT005-V3/](./versions/YDP420HT005-V3/)
-
----
+| 资料 | 链接 |
+| ---- | ---- |
+| 外形图（YDP420HT005-V3） | [`docs/YDP420HT005-V3_外形图.pdf`](./docs/YDP420HT005-V3_%E5%A4%96%E5%BD%A2%E5%9B%BE.pdf) |
+| 驱动 IC 数据手册（ST7306） | [`docs/ST_7306_V0_1_c30c3541a3.pdf`](./docs/ST_7306_V0_1_c30c3541a3.pdf) |
 
 ## 购买链接
 
@@ -84,8 +81,6 @@
 **海外（AliExpress）**
 
 - 店铺：[OSPTEK Official Store](https://www.aliexpress.com/store/1105701619)
-
----
 
 ## 技术支持
 
